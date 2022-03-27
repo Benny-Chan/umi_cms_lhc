@@ -1,0 +1,70 @@
+@import '~@/global.less';
+
+.container{
+    flex: 1;
+    :global{
+        span.ant-radio + *{
+            padding-right: 0px;
+            color: @grey_two;
+        }
+    }
+}
+.rank{
+    padding: 15px 20px 0 20px;
+    height: 235px;
+    display: flex;
+    flex-direction: column;
+}
+.list{
+    flex:1;
+    overflow: hidden;
+    position: relative;
+}
+.title{
+    height: 45px;
+    color: @grey_two;
+}
+.radio{
+    display: flex;
+    justify-content: flex-end;
+    color: @grey_two;
+    :global{
+        .ant-radio-inner{
+            background-color: rgba(255, 255, 255, 0);
+        }
+    }
+}
+.stationItem{
+    height: 58px;
+    display: flex;
+    align-items: center;
+}
+.progressItem{
+    height: 58px;
+}
+.name{
+    .font(16,@grey_two);
+    display: -webkit-box; 
+    -webkit-box-orient: vertical; 
+    -webkit-line-clamp: 1; 
+    overflow: hidden;
+}
+.name2{
+    .font(16,@grey_two);
+    display: -webkit-box; 
+    -webkit-box-orient: vertical; 
+    -webkit-line-clamp: 2; 
+    overflow: hidden;
+}
+.amount{
+    .font(16,@grey_two);
+}
+.rise{
+    .font(16, @red_one, '', 'HanSanMedium')
+}
+.decline{
+    .font(16, @blue_three, '', 'HanSanMedium')
+}
+.empty{
+    color: #aaa;
+}

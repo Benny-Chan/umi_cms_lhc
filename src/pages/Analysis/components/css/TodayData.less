@@ -1,0 +1,65 @@
+@import '~@/global.less';
+
+
+.container{
+    flex: 1;
+}
+.content{
+    padding: 20px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    .cardStyle();
+}
+
+.titleLeft{
+    .font(16, '', bold, 'HanSanMedium')
+}
+.titleRight{
+    .font(13, @grey_one);
+    .dfCenter();
+}
+.tipIcon{
+    font-size: 13px;
+    margin-left: 5px;
+    color: #aaa;
+}
+.RMB_Symbol{
+    .font(20, '', bold);
+    line-height: 34px;
+    margin-right: 3px;
+}
+.symbol{
+    .font(16, '', bold);
+    line-height: 27px;
+    margin-right: 3px;
+}
+.titleNum{
+    .font(28, '', '', 'Bebas');
+}
+.faultOrder{
+    .font(14, @red_one);
+    padding-bottom: 3px;
+}
+.percentText{
+    .font(14, @grey_one)
+}
+.cumulBorder{
+    border-top: 1px solid @grey_two;
+    padding-top: 8px;
+}
+.cumulantText{
+    .font(16, '', bold, 'HanSanMedium');
+}
+.cumulantNum{
+    .font(16, '', '', 'Bebas');
+}
+.detail{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.allGuns{
+    .font(14, @grey_one);
+}

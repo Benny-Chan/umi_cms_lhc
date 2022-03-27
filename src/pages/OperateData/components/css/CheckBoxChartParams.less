@@ -1,0 +1,56 @@
+@import '~@/global.less';
+
+@greyColor: #ccc;
+
+.container{
+    flex: 1
+}
+
+.chartBorder{
+    .cardStyle();
+    padding: 8px 25px;
+    margin-top: 10px;
+}
+
+.groupTitle{
+    margin-right: 30px;
+}
+
+.group{
+    margin: 3px 0;
+}
+
+.tags{
+    border-radius: 5px;
+    padding: 4px 27px;
+    position: relative;
+    margin: 3px 20px 5px 0;
+    border: 1px solid #DCE1ED;
+    .font(14, @grey_one)
+}
+
+.tagsActivate{
+    background-color: #fff;
+    color: @blue_six;
+    border: 1px solid @blue_six;
+    .outLined{
+        background-color: @blue_six;
+    }
+}
+
+.disable{
+    background-color: #EFF2F9;
+    pointer-events: none;
+    border: 1px solid #EFF2F9;
+}
+
+.outLined{
+    background-color: #DCE1ED;
+    color: #fff;
+    font-size: 11px;
+    position: absolute;
+    padding: 2px;
+    right: 0;
+    top: 0;
+    border-top-right-radius: 4px;
+}

@@ -1,0 +1,82 @@
+@import '~@/global.less';
+
+.container{
+    flex: 1;
+    :global{
+        .ant-picker{
+            .cardStyle();
+            border: 0;
+            width: 260px;
+            height: 45px
+        }
+    }
+}
+.tabs{
+    .font(16,'', bold);
+    margin-right: 30px;
+    padding-bottom: 2px;
+    &:hover{
+        cursor: pointer;
+    }
+}
+.activeTabs{
+    color: @blue_two;
+    border-bottom: 3px solid @blue_two;
+}
+.tabsContent{
+    padding: 30px;
+    flex: 1;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 8px @blue_one;
+}
+.line{
+    border-left: 1px solid @grey_three;
+}
+.rangePicker{
+    :global{
+        .ant-picker-input input{
+            text-align: center;
+        }
+    }
+}
+.tabBottomTitle{
+    .font(16, '', bold);
+    margin-bottom: 30px;
+}
+.pointer{
+    cursor: pointer;
+}
+.timeBtn{
+    padding: 10px 0px;
+}
+.unit{
+    .font(13, @grey_one);
+    margin-right: 8px;
+    margin-top: -5px;
+}
+.dropdown{
+    :global{
+        .ant-dropdown-menu{
+            border-radius: 8px;
+            box-shadow: 0px 2px 8px 0px #D8E9FF;
+        }
+        .ant-dropdown-menu-item{
+            &:hover{
+                color: @blue_six;
+                background-color: #fff;
+            }
+        }
+    }
+}
+.liveness{
+    .font(15);
+    padding: 12px 18px;
+}
+.livenessItem{
+    border-top: 1px solid #DCE1ED;
+    margin: 0 6px;
+}
+.livenessItem2{
+    margin: 0 6px;
+}

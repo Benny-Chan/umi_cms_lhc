@@ -1,0 +1,111 @@
+@import '~@/global.less';
+
+@greyColor: #ccc;
+
+@font-face {
+    font-family:'Bebas';
+    src: url('https://assets.linghuchongtech.com/fonts/Bebas.ttf');
+}
+@font-face {
+    font-family:'HanSanMedium';
+    src: url('https://assets.linghuchongtech.com/fonts/HanSanMedium.ttf');
+
+}
+@font-face {
+    font-family:'HanSanRegular';
+    src: url('https://assets.linghuchongtech.com/fonts/HanSanRegular.ttf');
+}
+
+
+.logo{
+    float: left;
+    color: #0070FF;
+    height: 50px;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.header{
+    background-color: #fff;
+    box-shadow: 0 0 3px #D0D0D0;
+    z-index: 100;
+    display: flex;
+    :global{
+        .ant-select:not(.ant-select-customize-input) .ant-select-selector{
+            border-radius: 30px;
+        }
+    }
+}
+.header2{
+    background-color: #fff;
+    border-bottom: 1px solid #33336B;
+    z-index: 100;
+    display: flex;
+    :global{
+        .ant-select:not(.ant-select-customize-input) .ant-select-selector{
+            background-color: @black_one;
+            color: #fff;
+        }
+        .ant-select:not(.ant-select-customize-input) .ant-select-selector{
+            border: 1px solid #fff;
+            border-radius: 30px;
+        }
+    }
+}
+.sider{
+    box-shadow: 0 0 10px #D0D0D0;
+    z-index: 90;
+    :global{
+        .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected{
+            background: linear-gradient(to right, #E8F5FF , #F5FBFF);
+        }
+    }
+}
+.sider2{
+    box-shadow: 0 0 0px #D0D0D0;
+    z-index: 90;
+    :global{
+        .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected{
+            background: linear-gradient(to right, #2152AE , #141A32);
+        }
+        .ant-menu-inline{
+            border-right: 1px solid #33336B;
+        }
+    }
+}
+.headerBackground{
+    padding: 0px;
+    background-color: #fff;
+    box-shadow: 0 1px 5px #aaa;
+    color: #fff;
+}
+
+.content{
+    // border: 1px solid @greyColor;
+    // padding: 20px 30px 120px 30px;
+    // background-color: #fff;
+    // box-shadow: 1px 1px 5px #aaa;
+}
+.site_layout{
+    // border: 1px solid red;
+    padding: 22px 30px 150px 30px;
+}
+
+.headerRight {
+    height: 100%;
+    border: 0;
+    font-size: 1.1rem;
+    // float: right;
+    color: #798196;
+    margin-left: auto;
+  }
+  
+.headerRightMenuItem {
+    padding: 6px 10px;
+    font-size: 1rem;
+}
+
+.blackTheme{
+    background-color: @black_one;
+    color: #fff;
+}

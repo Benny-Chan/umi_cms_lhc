@@ -1,0 +1,50 @@
+@import '~@/global.less';
+
+@greyColor: #888;
+
+.container{
+    margin-top: 10px;
+    :global{
+        .ant-select-single:not(.ant-select-customize-input) .ant-select-selector{
+            border-radius: 4px;
+        }
+        .ant-select-single:not(.ant-select-customize-input){
+            margin-right: 20px;
+        }
+    }
+}
+
+.charts{
+    margin-top: 25px;
+    .cardStyle();
+    padding: 30px 20px;
+}
+
+.tableTitle{
+    color: @greyColor;
+    margin: 25px 0 10px 15px;
+}
+
+.chartParam{
+    .font(16px, '', bold);
+    margin-right: 20px;
+    padding-left: 15px;
+}
+
+.chartParamTip{
+    .font(14px, @grey_one);
+    margin-right: 30px;
+}
+
+.fold{
+    padding: 4px 6px;
+    border: 1px solid @blue_two;
+    border-radius: 8px;
+    .font(14px, @blue_two);
+}
+
+.btn{
+  margin-right: 20px;
+  border-radius: 5px;
+  height: 40px
+}

@@ -1,0 +1,57 @@
+@import '~@/global.less';
+
+
+.inputWidth(@width:120px){
+    width: @width;
+    text-align: center;
+}
+
+.container{
+    flex: 1;
+    :global{
+        .ant-select:not(.ant-select-customize-input) .ant-select-selector{
+            .inputStyle();
+        }
+    }
+}
+
+.lable{
+    width: 100px;
+    display: flex;
+    font-weight: bold;
+    padding-top: 8px;
+    .font(16px,'', bold)
+}
+
+.statisticsType{
+    width: 220px;
+}
+
+.btn{
+    margin-left: 20px;
+    border-radius: 5px;
+    height: 40px
+}
+
+.letfInput{
+    .inputWidth();
+    border: 0;
+}
+
+.rightInput{
+    .inputWidth();
+    border: 0;
+}
+
+.rangeInput{
+    .cardStyle();
+    height: 40px
+}
+
+.disabledInput{
+    .inputWidth(30px);
+    .dfCenter();
+    pointer-events: none;
+    color: @grey_four;
+}
+

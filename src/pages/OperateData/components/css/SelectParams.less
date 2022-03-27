@@ -1,0 +1,36 @@
+@import '~@/global.less';
+
+@greyColor: #ccc;
+
+.container{
+    flex: 1;
+    :global{
+        .ant-select:not(.ant-select-customize-input) .ant-select-selector{
+            border: 0;
+            .font(14px)
+        }
+      .ant-select-show-search.ant-select:not(.ant-select-customize-input) .ant-select-selector input{
+        height: 100%;
+      }
+      .ant-picker{
+        border: 0;
+        .font(14px);
+        .cardStyle();
+        height: 40px;
+        display: flex;
+        align-items: center;
+      }
+        .ant-select-single:not(.ant-select-customize-input) .ant-select-selector{
+            .cardStyle();
+        }
+        .ant-select-single:not(.ant-select-customize-input) .ant-select-selector{
+            height: 40px;
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+.label{
+    .font(16px,'',bold);
+    margin-top: 8px;
+}

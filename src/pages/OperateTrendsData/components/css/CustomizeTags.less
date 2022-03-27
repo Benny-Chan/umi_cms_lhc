@@ -1,0 +1,52 @@
+@import '~@/global.less';
+
+
+.inputWidth(@width:70px){
+    width: @width;
+    text-align: center;
+}
+
+.container{
+    flex: 1;
+    :global{
+
+    }
+}
+
+.lable{
+    width: 100px;
+    justify-content: center;
+    display: flex;
+    font-weight: bold;
+    padding-top: 4px;
+}
+
+.btn{
+    margin-left: 20px;
+    border-radius: 5px;
+}
+
+.letfInput{
+    .inputWidth();
+    border-right: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.rightInput{
+    .inputWidth();
+    border-left: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.disabledInput{
+    .inputWidth(30px);
+    border-left: 0;
+    border-right: 0;
+    pointer-events: none;
+    margin: 0 -1px;
+    &:disabled{
+        background-color: #fff;
+    }
+}

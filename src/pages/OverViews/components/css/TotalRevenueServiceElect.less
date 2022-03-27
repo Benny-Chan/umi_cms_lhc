@@ -1,0 +1,74 @@
+@import '~@/global.less';
+
+.container{
+    flex: 1;
+}
+.cardItem{
+    padding: 30px 0px;
+    height: 235px;
+    display: flex;
+    flex-direction: column;
+}
+.icon{
+    width: 17px;
+    height: 17px;
+    margin-right: 8px;
+}
+.title{
+    // margin-bottom: 15px;
+    .font(16, '', '', 'HanSanMedium');
+    margin-left: 15%;
+}
+.left{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border-right: 1px dashed #274696;
+    // padding: 10px 0 20px 0;
+    height: 100%;
+    .font(16, @grey_two);
+}
+.right{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+    .font(16, @grey_two);
+}
+.symbol{
+    .font(20);
+    // margin-right: 5px;
+    line-height: 32px;
+    margin-left: 15%;
+}
+.todayAmount{
+    .font(30, '', '', 'Bebas');
+}
+.todayText{
+    margin-top: 25px;
+    .font(16);
+    margin-left: 15%;
+}
+.RightText{
+    margin-right: 15px;
+}
+.margin{
+    margin: 10px 0;
+}
+.cardMt{
+    margin-top: 25px;
+}
+
+
+.revenue{
+    margin-top: 5px;
+    .textGradient(#FA465A,#FC9B73);
+}
+.service{
+    margin-top: 5px;
+    .textGradient(#FF845E,#E5B986);
+}
+.electric{
+    margin-top: 5px;
+    .textGradient(#5B67FE,#30BFF0);
+}

@@ -1,0 +1,36 @@
+@import '~@/global.less';
+
+
+.rankingList(@size){
+    width: @size;
+    height: @size;
+    line-height: @size;
+    border-radius: @size;
+    color: #fff;
+}
+
+
+.container{
+    flex: 1;
+}
+.site{
+    margin-top: 30px;
+}
+.ranking{
+    margin: 0 10px;
+    .font(13)
+}
+.name{
+    .font(14, @grey_one)
+}
+.amount{
+    .font(14)
+}
+.frontBlack{
+    .rankingList(18px);
+    background-color: @blue_two;
+}
+.frontGrey{
+    .rankingList(18px);
+    background-color: #657797;
+}

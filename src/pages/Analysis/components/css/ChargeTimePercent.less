@@ -1,0 +1,35 @@
+@import '~@/global.less';
+
+
+
+.title{
+    .font(16, '', bold, 'HanSanMedium');
+    padding-left: 15px;
+    margin-bottom: 18px
+}
+.margin{
+    .cardStyle();
+    padding: 25px 20px;
+    height: 450px;
+}
+.detail{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
+.tags{
+    background-color: @blue_five;
+    border-radius: 10px;
+    padding: 6px 3px;
+    &:hover{
+        cursor: pointer;
+    }
+}
+.tagsItem{
+    .dfCenter();
+    width: 81px;
+    height: 32px;
+    border-radius: 6px;
+    .font(16, @grey_one);
+    margin: 0 3px;
+}

@@ -1,0 +1,42 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "umi dev",
+    "build": "umi build",
+    "postinstall": "umi generate tmp",
+    "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
+    "test": "umi-test",
+    "test:coverage": "umi-test --coverage"
+  },
+  "lint-staged": {
+    "*.{js,jsx,less,md,json}": [
+      "prettier --write"
+    ],
+    "*.ts?(x)": [
+      "prettier --parser=typescript --write"
+    ]
+  },
+  "dependencies": {
+    "@ant-design/charts": "^1.0.0",
+    "@umijs/plugin-antd": "^0.9.1",
+    "@umijs/plugin-locale": "^0.10.8",
+    "@umijs/plugin-request": "^2.5.0",
+    "@umijs/test": "^3.2.20",
+    "ahooks": "^2.9.6",
+    "countup.js": "^2.0.7",
+    "echarts": "^5.0.2",
+    "js-file-download": "^0.4.12",
+    "lint-staged": "^10.0.7",
+    "mobx": "^5.15.6",
+    "mobx-loading": "^1.2.5",
+    "mobx-react": "^6.3.0",
+    "prettier": "^1.19.1",
+    "qs": "^6.9.4",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "umi": "^3.3.7",
+    "underscore": "^1.12.0",
+    "xlsx-populate": "^1.21.0",
+    "yorkie": "^2.0.0"
+  }
+}

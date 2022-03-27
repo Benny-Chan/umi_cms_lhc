@@ -1,0 +1,82 @@
+
+
+@grey_one: #798196;
+@grey_two: #DCE1ED;
+@grey_three: #E4E8F1;
+@grey_four: #9FA3AE;
+
+@red_one: #FF6479;
+
+@blue_one: #D8E9FF;
+@blue_two: #006BFF;
+@blue_three: #00E4E1;
+@blue_four: #E9F4FF;
+@blue_five: #E5F0FF;
+@blue_six: #0070FF;
+
+@black_one: #13132D;
+@black_two: #091531;
+
+.red(){
+    border: 1px solid red;
+}
+
+.dfCenter(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// card样式
+.cardStyle(){
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 8px @blue_one;
+}
+
+.inputStyle(@height: 40px){
+    border: 0;
+    height: @height;
+    display: flex;
+    align-items: center;
+}
+
+// 封装字体
+.haveColor(@color) when not(@color = ''){
+    color: @color;
+}
+.haveBold(@weight) when not(@weight = ''){
+    font-weight: @weight;
+}
+.haveFamily(@family) when not(@family = ''){
+    font-family: @family;
+}
+.font(@size: 16; @color: ''; @weight: ''; @family: ''){
+    font-size: @size + 0px;
+    .haveColor(@color);
+    .haveBold(@weight);
+    .haveFamily(@family);
+}
+
+.searchParamContainer{
+  border: 0;
+  .font(14px);
+  .cardStyle();
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.stationSelectContainer{
+  border: 0;
+  .font(14px);
+  .cardStyle();
+  min-height: 40px;
+  align-items: center;
+}
+
+.textGradient(@color1, @color2){
+    background-image: -webkit-gradient(linear, left 0, right 0, from(@color1), to(@color2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
